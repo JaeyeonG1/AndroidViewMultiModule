@@ -1,0 +1,152 @@
+[versions]
+# SDK
+compileSdk = "33"
+minSdk = "26"
+targetSdk = "33"
+jdkVersion = "17"
+# Android Gradle Plugin and Desugar
+androidGradlePlugin = "7.4.2"
+androidDesugarJdkLibs = "1.2.2"
+# Android Jetpack - Foundation
+androidxCore = "1.10.1"
+androidxAppCompat = "1.6.1"
+androidxAnnotation = "1.6.0"
+# Android Jetpack - Navigation
+androidxNavigation = "2.6.0"
+# Android Jetpack - Architecture
+androidxLifecycle = "2.6.1"
+# Android Jetpack - UI
+androidxCoreSplashScreen = "1.0.1"
+androidxActivity = "1.7.2"
+androidxConstraintLayout = "2.2.0-alpha09"
+# Android Jetpack - Data
+androidxWorkManager = "2.8.0"
+androidxRoom = "2.5.2"
+# Material
+material = "1.9.0"
+# Hilt
+hilt = "2.46.1"
+hiltExt = "1.0.0"
+# Goole & Firebase
+gmsPlugin = "4.3.14"
+firebaseBom = "31.3.0"
+firebaseCrashlyticsPlugin = "2.9.2"
+# Kotlin
+kotlin = "1.8.21"
+kotlinxCoroutines = "1.7.2"
+kotlinxSerializationJson = "1.5.1"
+ksp = "1.8.21-1.0.11"
+# Network
+okHttp = "4.11.0"
+retrofit = "2.9.0"
+retrofitKotlinxSerializationJson = "1.0.0"
+# Image
+glide = "4.15.1"
+# Debug
+timber = "5.0.1"
+stetho = "1.6.0"
+okHttpProfiler = "1.0.8"
+# Setting
+detekt = "1.21.0"
+
+[libraries]
+# Android JDK Desugaring
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+# Android Jetpack - Foundation Libs
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidxAnnotation" }
+# Android Jetpack - Navigation Libs
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigation" }
+# Android Jetpack - Architecture Libs
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+# Android Jetpack - UI Libs
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashScreen" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraintLayout" }
+# Android Jetpack - Data Libs
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "androidxWorkManager" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidxRoom" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "androidxRoom" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidxRoom" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidxRoom" }
+# Material Lib
+android-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+# Hilt Libs
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-navigation-fragment = { group = "androidx.hilt", name = "hilt-navigation-fragment", version.ref = "hiltExt" }
+hilt-ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
+# Google & Firebase Libs
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-cloud-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+# Kotlin Libs
+kotlin-coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+# Network Libs
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
+# Image Libs
+bumptech-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+# Debug Libs
+jakewharton-timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+stetho-core = { group = "com.facebook.stetho", name = "stetho", version.ref = "stetho" }
+stetho-okhttp3 = { group = "com.facebook.stetho", name = "stetho-okhttp3", version.ref = "stetho" }
+localebro-okhttpprofiler = { group = "com.localebro", name = "okhttpprofiler", version.ref = "okHttpProfiler" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsPlugin" }
+
+[bundles]
+navigation = [
+    "androidx-navigation-ui",
+    "androidx-navigation-fragment"
+]
+room = [
+    "androidx-room-common",
+    "androidx-room-ktx",
+    "androidx-room-runtime"
+]
+kotlinx = [
+    "kotlinx-coroutines-android",
+    "kotlinx-serialization-json"
+]
+network = [
+    "okhttp-logging",
+    "retrofit-core",
+    "retrofit-kotlin-serialization"
+]
+debugtools = [
+    "jakewharton-timber",
+    "stetho-core",
+    "stetho-okhttp3",
+    "localebro-okhttpprofiler"
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
+android-navigation-safeargs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "androidxNavigation" }
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+gms = { id = "com.google.gms.google-services", version.ref = "gmsPlugin" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlyticsPlugin" }
