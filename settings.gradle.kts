@@ -46,3 +46,8 @@ rootProject.name = "view-multi-module"
 // Modules //
 /////////////
 include(":app")
+include(":core:model")
+include(":core:data")
+include(":core:database")
+include(":core:network")
+include(":core:ui")
