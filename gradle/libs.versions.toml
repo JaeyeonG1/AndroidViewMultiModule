@@ -31,6 +31,7 @@ hiltExt = "1.0.0"
 gmsPlugin = "4.3.14"
 firebaseBom = "31.3.0"
 firebaseCrashlyticsPlugin = "2.9.2"
+secerts = "2.0.1"
 # Kotlin
 kotlin = "1.8.21"
 kotlinxCoroutines = "1.7.2"
@@ -150,3 +151,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 gms = { id = "com.google.gms.google-services", version.ref = "gmsPlugin" }
 firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlyticsPlugin" }
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secerts" }

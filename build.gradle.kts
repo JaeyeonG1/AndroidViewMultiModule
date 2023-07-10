@@ -1,4 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+@file:Suppress("DSL_SCOPE_VIOLATION")
+
 buildscript {
     repositories {
         google()
@@ -21,6 +23,14 @@ plugins {
     alias(libs.plugins.hilt) apply false
     alias(libs.plugins.gms) apply false
     alias(libs.plugins.firebase.crashlytics) apply false
+    alias(libs.plugins.secrets)
+}
+
+secrets {
+    defaultPropertiesFileName = "secrets.default.properties"
+
+    ignoreList.add("keyToIgnore")
+    ignoreList.add("sdk.*")
 }
 
 task("clean", Delete::class) {
