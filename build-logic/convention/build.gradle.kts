@@ -58,9 +58,13 @@ gradlePlugin {
             id = "tambi.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
         }
-        register("androidFlavors") {
+        register("androidApplicationFlavors") {
             id = "tambi.android.application.flavors"
             implementationClass = "AndroidApplicationFlavorsConventionPlugin"
+        }
+        register("androidLibraryFlavors") {
+            id = "tambi.android.library.flavors"
+            implementationClass = "AndroidLibraryFlavorsConventionPlugin"
         }
         register("androidHilt") {
             id = "tambi.android.hilt"

@@ -2,6 +2,7 @@ package com.tambi.convention.flavor
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.ApplicationProductFlavor
+import com.android.build.api.dsl.LibraryExtension
 import com.android.build.api.dsl.ProductFlavor
 import com.tambi.convention.Const
 import com.tambi.convention.Versions
@@ -63,6 +64,18 @@ internal enum class AppFlavor(
                 this.applicationIdSuffix = this@AppFlavor.applicationIdSuffix
                 setFlavorResValues(this@AppFlavor)
                 setFlavorVersions(this@AppFlavor)
+            }
+        }
+    }
+
+    override fun buildLibraryFlavor(
+        libraryExtension: LibraryExtension,
+        flavorConfigurationBlock: ProductFlavor.(flavor: AppFlavor) -> Unit
+    ) {
+        libraryExtension.productFlavors {
+            create(this@AppFlavor.flavorName) {
+                dimension = FlavorDimension.mode.name
+                flavorConfigurationBlock(this, this@AppFlavor)
             }
         }
     }

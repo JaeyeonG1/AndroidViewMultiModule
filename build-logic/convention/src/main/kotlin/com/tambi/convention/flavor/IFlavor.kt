@@ -1,6 +1,7 @@
 package com.tambi.convention.flavor
 
 import com.android.build.api.dsl.ApplicationExtension
+import com.android.build.api.dsl.LibraryExtension
 import com.android.build.api.dsl.ProductFlavor
 
 internal interface IFlavor {
@@ -15,6 +16,11 @@ internal interface IFlavor {
 
     fun buildFlavor(
         applicationExtension: ApplicationExtension,
+        flavorConfigurationBlock: ProductFlavor.(flavor: AppFlavor) -> Unit
+    )
+
+    fun buildLibraryFlavor(
+        libraryExtension: LibraryExtension,
         flavorConfigurationBlock: ProductFlavor.(flavor: AppFlavor) -> Unit
     )
 }
