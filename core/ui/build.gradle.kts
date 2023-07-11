@@ -1,5 +1,10 @@
 plugins {
     id("tambi.android.library")
+    id("tambi.android.library.binding")
+}
+
+android {
+    namespace = "com.tambi.core.ui"
 }
 
 dependencies {
