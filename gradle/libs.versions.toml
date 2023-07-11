@@ -22,6 +22,7 @@ androidxConstraintLayout = "2.2.0-alpha09"
 # Android Jetpack - Data
 androidxWorkManager = "2.8.0"
 androidxRoom = "2.5.2"
+androidxDataStore = "1.0.0"
 # Material
 material = "1.9.0"
 # Hilt
@@ -72,6 +73,7 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "androidxRoom" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidxRoom" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidxRoom" }
+androidx-datastore-preference = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDataStore" }
 # Material Lib
 android-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 # Hilt Libs
