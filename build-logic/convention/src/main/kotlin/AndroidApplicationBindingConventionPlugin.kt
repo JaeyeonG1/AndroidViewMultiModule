@@ -6,9 +6,9 @@ import org.gradle.kotlin.dsl.getByType
 
 class AndroidApplicationBindingConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
-
         with(target) {
             pluginManager.apply("com.android.application")
+            pluginManager.apply("kotlin-kapt")
 
             val extension = extensions.getByType<ApplicationExtension>()
             configureAndroidBinding(extension)

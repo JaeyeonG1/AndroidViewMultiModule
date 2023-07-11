@@ -10,6 +10,7 @@ class AndroidLibraryBindingConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply("com.android.library")
+            pluginManager.apply("kotlin-kapt")
 
             val extension = extensions.getByType<LibraryExtension>()
             configureAndroidBinding(extension)
